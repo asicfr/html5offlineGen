@@ -1,0 +1,42 @@
+CACHE MANIFEST
+ 
+# Build 2013-01-29-14h52
+ 
+CACHE:
+css/bootstrap-responsive.min.css
+css/bootstrap.min.css
+css/custom.css
+css/toastr.css
+
+img/glyphicons-halflings-white.png
+img/glyphicons-halflings.png
+
+js/angular.min.js
+js/bootstrap.min.js
+js/jquery.js
+js/modernizr.custom.js
+js/datastore.js
+js/offline.js
+js/toastr.js
+js/mainctrl.js
+js/cacheApp.js
+
+#foreach ( $entityClass in $selectedEntities )
+jsmodules/${entityClass.name.toLowerCase()}/${entityClass.name.toLowerCase()}ctrl.js
+jsmodules/${entityClass.name.toLowerCase()}/${entityClass.name.toLowerCase()}srv.js
+#end 
+
+main/footer.html
+main/header.html
+main/inprogress.html
+main/welcome.html
+
+#foreach ( $entityClass in $selectedEntities )
+pages/${entityClass.name.toLowerCase()}/create.html
+pages/${entityClass.name.toLowerCase()}/edit.html
+pages/${entityClass.name.toLowerCase()}/list.html
+#end 
+
+NETWORK:
+http://*
+https://*

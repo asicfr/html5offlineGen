@@ -1,0 +1,23 @@
+
+<div id="${beanClass.name.toLowerCase()}Create" ng-controller="${beanClass.name}CreateCtrl">
+ 
+    <h2>${beanClass.name} Create</h2>
+ 
+ 	<form class="form-horizontal">
+ 	
+	#foreach( $field in $beanClass.attributes )
+ 		<div class="control-group">
+			<label class="control-label" for="${field.name}">${field.name}</label>
+			<div class="controls">
+				<input type="text" id="${field.name}" ng-model="one${beanClass.name.toLowerCase()}.${field.name}" />
+			</div>
+		</div>
+  	#end
+
+	</form>
+
+ 	<br />
+    <button ng-click="save${beanClass.name}()">Save</button>
+	<button ng-click="openList${beanClass.name}Page()">Return to list</button>
+  
+</div>

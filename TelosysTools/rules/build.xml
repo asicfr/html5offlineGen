@@ -1,0 +1,11 @@
+<!-- ============================================================================== -->
+<!-- ANT file for rules class compilation -->
+<!-- ============================================================================== -->
+<project name="Generator specific rules" default="compile">
+
+	<target name="compile" >
+		<javac srcdir="." destdir="." >
+		</javac>
+	</target>
+
+</project>

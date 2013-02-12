@@ -1,0 +1,9 @@
+A voir: 
+- ctrl type data ?
+- liaison avec autres entités ?
+- libellé des entités ?
+
+
+Pour lancer l'application : 
+http://localhost:8080/html5offlineGen/index.html
+
