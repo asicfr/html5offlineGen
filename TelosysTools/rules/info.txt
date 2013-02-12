@@ -1,9 +1,0 @@
-The directory "rules" contains an example
-of specific rules for the Telosys-DAL plugin
-The java class contains methods used by 
-. the "repository generator"  
-. the plugin IU
-
-To compile the java class, run the ANT "build.xml" 
-the ".class" is located in the same directory.
-

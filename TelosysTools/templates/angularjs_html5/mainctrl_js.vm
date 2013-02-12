@@ -9,15 +9,15 @@ var bookStore = angular.module('bookStore', ['bookStore.main',
 bookStore.run(function(${DOLLAR}rootScope, ${DOLLAR}templateCache, ${DOLLAR}http, ApiStorage) {
 
 	// Force template cache to allow offline for all partials
-	${DOLLAR}http.get('main/footer.html', {cache:${DOLLAR}templateCache});
-    ${DOLLAR}http.get('main/header.html', {cache:${DOLLAR}templateCache});
-    ${DOLLAR}http.get('main/inprogress.html', {cache:${DOLLAR}templateCache});
-    ${DOLLAR}http.get('main/welcome.html', {cache:${DOLLAR}templateCache});
+	${DOLLAR}http.get('gen/partials/footer.html', {cache:${DOLLAR}templateCache});
+    ${DOLLAR}http.get('gen/partials/header.html', {cache:${DOLLAR}templateCache});
+    ${DOLLAR}http.get('partials/inprogress.html', {cache:${DOLLAR}templateCache});
+    ${DOLLAR}http.get('partials/welcome.html', {cache:${DOLLAR}templateCache});
 
 #foreach ( $entityClass in $selectedEntities )
-    ${DOLLAR}http.get('pages/${entityClass.name.toLowerCase()}/create.html', {cache:${DOLLAR}templateCache});
-    ${DOLLAR}http.get('pages/${entityClass.name.toLowerCase()}/edit.html', {cache:${DOLLAR}templateCache});
-    ${DOLLAR}http.get('pages/${entityClass.name.toLowerCase()}/list.html', {cache:${DOLLAR}templateCache});
+    ${DOLLAR}http.get('gen/pages/${entityClass.name.toLowerCase()}/create.html', {cache:${DOLLAR}templateCache});
+    ${DOLLAR}http.get('gen/pages/${entityClass.name.toLowerCase()}/edit.html', {cache:${DOLLAR}templateCache});
+    ${DOLLAR}http.get('gen/pages/${entityClass.name.toLowerCase()}/list.html', {cache:${DOLLAR}templateCache});
     
 #end
 

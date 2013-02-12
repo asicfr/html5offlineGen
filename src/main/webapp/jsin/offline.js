@@ -12,7 +12,7 @@
 			$.ajax({
 				cache : false,
 				timeout : 2800,
-				url : "js/onlineCheck.txt",
+				url : "jsin/onlineCheck.txt",
 				dataType : "html" // be carefull on the datatype
 			}).done(function(resp) { 
 				if (resp === "online") {

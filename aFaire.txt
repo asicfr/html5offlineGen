@@ -1,5 +1,7 @@
-A voir: 
+﻿A voir: 
 - ctrl type data ?
+	type html5
+	http://jsfiddle.net/asicfr/Q8v9A/
 - liaison avec autres entités ?
 - libellé des entités ?
 

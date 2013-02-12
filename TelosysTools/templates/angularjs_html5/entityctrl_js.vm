@@ -4,17 +4,17 @@ var bookStore${beanClass.name.toLowerCase()} = angular.module('bookStore.${beanC
 
 	// ${beanClass.name.toLowerCase()} list
 	${DOLLAR}routeProvider.when('/${beanClass.name.toLowerCase()}', {
-		templateUrl: 'pages/${beanClass.name.toLowerCase()}/list.html'
+		templateUrl: 'gen/pages/${beanClass.name.toLowerCase()}/list.html'
 	});
 
 	// ${beanClass.name.toLowerCase()} create
 	${DOLLAR}routeProvider.when('/${beanClass.name.toLowerCase()}/create', {
-		templateUrl: 'pages/${beanClass.name.toLowerCase()}/create.html'
+		templateUrl: 'gen/pages/${beanClass.name.toLowerCase()}/create.html'
 	});
 
 	// ${beanClass.name.toLowerCase()} edit
 	${DOLLAR}routeProvider.when('/${beanClass.name.toLowerCase()}/:id', {
-		templateUrl: 'pages/${beanClass.name.toLowerCase()}/edit.html'
+		templateUrl: 'gen/pages/${beanClass.name.toLowerCase()}/edit.html'
 	});
 
 });

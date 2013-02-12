@@ -13,29 +13,29 @@
 	<link href="css/toastr.css" rel="stylesheet"/>
 	<link href="css/custom.css" rel="stylesheet"/>
 	
-	<script src="js/jquery.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/angular.min.js"></script>
-	<script src="js/modernizr.custom.js"></script>
-	<script src="js/toastr.js"></script>
+	<script src="jsext/jquery.js"></script>
+	<script src="jsext/bootstrap.min.js"></script>
+	<script src="jsext/angular.min.js"></script>
+	<script src="jsext/modernizr.custom.js"></script>
+	<script src="jsext/toastr.js"></script>
 	
-	<script src="js/offline.js"></script>
-	<script src="js/cacheApp.js"></script>
-	<script src="js/datastore.js"></script>
+	<script src="jsin/offline.js"></script>
+	<script src="jsin/cacheApp.js"></script>
+	<script src="jsin/datastore.js"></script>
 
-	<script src="js/mainctrl.js"></script>
+	<script src="gen/js/mainctrl.js"></script>
 
 #foreach ( $entityClass in $selectedEntities )
-	<script src="jsmodules/${entityClass.name.toLowerCase()}/${entityClass.name.toLowerCase()}ctrl.js"></script>
-	<script src="jsmodules/${entityClass.name.toLowerCase()}/${entityClass.name.toLowerCase()}srv.js"></script>
+	<script src="gen/jsmodules/${entityClass.name.toLowerCase()}/${entityClass.name.toLowerCase()}ctrl.js"></script>
+	<script src="gen/jsmodules/${entityClass.name.toLowerCase()}/${entityClass.name.toLowerCase()}srv.js"></script>
 #end 
-	
+
 </head>
 <body ng-controller="MainCtrl">
-	<ng-include src="'main/header.html'"></ng-include>
+	<ng-include src="'gen/partials/header.html'"></ng-include>
 	<br />
 	<div class="container" ng-view></div>
-	<ng-include src="'main/footer.html'"></ng-include>
+	<ng-include src="'gen/partials/footer.html'"></ng-include>
 </body>
 </html>
 
