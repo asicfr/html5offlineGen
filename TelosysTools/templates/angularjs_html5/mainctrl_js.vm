@@ -50,7 +50,7 @@ var bookStoremain = angular.module('bookStore.main', [], function(${DOLLAR}route
 	
 	// Declare welcome route
 	${DOLLAR}routeProvider.when('/welcome', {
-		templateUrl : 'main/welcome.html',
+		templateUrl : 'partials/welcome.html',
 	    controller: 'MainCtrl'
 	});
 

@@ -21,17 +21,18 @@ jsin/cacheApp.js
 jsin/datastore.js
 jsin/offline.js
 
+partials/inprogress.html
+partials/welcome.html
+
 gen/js/mainctrl.js
+
+gen/partials/footer.html
+gen/partials/header.html
 
 #foreach ( $entityClass in $selectedEntities )
 gen/jsmodules/${entityClass.name.toLowerCase()}/${entityClass.name.toLowerCase()}ctrl.js
 gen/jsmodules/${entityClass.name.toLowerCase()}/${entityClass.name.toLowerCase()}srv.js
 #end 
-
-main/footer.html
-main/header.html
-main/inprogress.html
-main/welcome.html
 
 #foreach ( $entityClass in $selectedEntities )
 gen/pages/${entityClass.name.toLowerCase()}/create.html
