@@ -8,10 +8,11 @@
 	<meta name="author" content="asic">
 	<meta name="site" content="http://techasite.blogspot.fr/">
 	
-	<link href="css/bootstrap.min.css" rel="stylesheet" />
-	<link href="css/bootstrap-responsive.min.css" rel="stylesheet" />
-	<link href="css/toastr.css" rel="stylesheet"/>
-	<link href="css/custom.css" rel="stylesheet"/>
+	<link href="cssext/bootstrap.min.css" rel="stylesheet" />
+	<link href="cssext/bootstrap-responsive.min.css" rel="stylesheet" />
+	<link href="cssext/toastr.css" rel="stylesheet"/>
+	
+	<link href="cssin/custom.css" rel="stylesheet"/>
 	
 	<script src="jsext/jquery.js"></script>
 	<script src="jsext/bootstrap.min.js"></script>
