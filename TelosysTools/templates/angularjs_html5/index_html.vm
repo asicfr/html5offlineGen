@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html manifest="offline.appcache" lang="en" ng-app="bookStore">
+<html manifest="offline.appcache" lang="en" data-ng-app="bookStore">
 <head>
 	<title>Book Store</title>
 	<meta charset="utf-8">
@@ -32,10 +32,10 @@
 #end 
 
 </head>
-<body ng-controller="MainCtrl">
+<body data-ng-controller="MainCtrl">
 	<ng-include src="'gen/partials/header.html'"></ng-include>
 	<br />
-	<div class="container" ng-view></div>
+	<div class="container" data-ng-view></div>
 	<ng-include src="'gen/partials/footer.html'"></ng-include>
 </body>
 </html>

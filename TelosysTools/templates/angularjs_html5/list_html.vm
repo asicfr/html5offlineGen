@@ -1,6 +1,6 @@
 
 
-<div id="${beanClass.name.toLowerCase()}List" ng-controller="${beanClass.name}ListCtrl">
+<div id="${beanClass.name.toLowerCase()}List" data-ng-controller="${beanClass.name}ListCtrl">
  
     <h2>${beanClass.name}s list</h2>
 
@@ -13,7 +13,7 @@
 	    </tr>
 	  </thead>
 	  <tbody>
-        <tr ng-repeat="(key, value) in ${beanClass.name.toLowerCase()}s">
+        <tr data-ng-repeat="(key, value) in ${beanClass.name.toLowerCase()}s">
 			#foreach( $field in $beanClass.attributes )
 	      		<td>
 	      			<a href="${SHARP}/${beanClass.name.toLowerCase()}/{{key}}">{{value.${field.name}}}</a>
@@ -24,6 +24,6 @@
 	</table>
  
  	<br />
- 	<button ng-click="openCreate${beanClass.name}Page()">New</button>
+ 	<button data-ng-click="openCreate${beanClass.name}Page()">New</button>
  
 </div>
